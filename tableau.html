@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes Tableaux</title>
+  <style>
+    body {
+      background-color: orange;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: white;
+      color: blue;
+      padding: 10px;
+      border: 2px solid #ccc;
+    }
+
+    .tableau {
+      margin: 30px auto;
+      width: max-content;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid black;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .red { background-color: red; color: white; }
+    .green { background-color: green; color: white; }
+    .blue { color: blue; }
+  </style>
+</head>
+<body>
+
+  <h1>BIENVENUE DANS MON SITE</h1>
+
+  <div class="tableau">
+    <h3>Tableau1</h3>
+    <table>
+      <tr><td colspan="3">A</td></tr>
+      <tr><td>B</td><td colspan="2">C</td></tr>
+    </table>
+  </div>
+
+  <div class="tableau">
+    <h3>Tableau2</h3>
+    <table>
+      <tr><td>D</td><td>E</td><td>F</td></tr>
+    </table>
+  </div>
+
+  <div class="tableau">
+    <h3>Tableau fusion</h3>
+    <table>
+      <tr>
+        <td class="red">A</td><td>B</td><td class="blue">C</td>
+      </tr>
+      <tr>
+        <td>D</td><td class="green">E</td><td>F</td>
+      </tr>
+      <tr>
+        <td colspan="3">G</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tableau">
+    <h3>Tableau4</h3>
+    <table>
+      <tr><td rowspan="3">IG1-B</td><td>IG1-A</td></tr>
+      <tr><td>IG2-A</td></tr>
+      <tr><td>IG2-B</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>

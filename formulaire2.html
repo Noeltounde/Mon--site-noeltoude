@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    <u>
+      Enregistrement des étudiants
+    </u>
+  </h1>
+  <form method="post" action="cible.formulaire.php">
+    <fieldset>
+      <legend>ETAT CIVIL</legend>
+      <label for="nom">
+        NOM:
+      </label><br/>
+      <input type="text" name="nom" id="nom"/><br/>
+      
+    <label for="prenoms">
+        PRENOMS:
+      </label><br/>
+      <input type="text" name="prenoms" id="prenoms"/><br/>
+      <label for="nom">
+        Date de naissance:
+      </label><br/>
+      <input type="text" name="date" id="date"/><br/></br/>
+    <label for="sexe">sexe:</label>
+    <select name="sexe" id="sexe">
+      <option value="masculin">Masculin</option>
+       <option value="feminin">Feminin</option>
+    </select><br/>
+      <label for="e-mail">
+        e-mail:
+      </label><br/>
+      <input type="text" name="e-mail" id="e-mail"/><br/>
+      <label for="e-mail">
+      <label for="contact">
+        contact:
+      </label><br/>
+      <input type="text" name="contact" id="cintact"/><br/>
+      </fieldset> 
+     
+      
+
+   
+  <fieldset>
+    <legend>Les Diplomes</legend>
+    <input type="checkbox" name="CEP" id="CEP"/>
+    <label for="CEP">CEP</label>
+    <input type="checkbox" name="BEPC" id="BEPC"/>
+    <label for="BEPC">BEPC</label>
+    <input type="checkbox" name="BAC" id="BAC00"/>
+    <label for="BAC">BAC</label>
+    <input type="checkbox" name="BTS" id="BTS"/>
+    <label for="BTS">BTS</label>
+    
+    
+  </fieldset>
+    <p>
+      <label for="adress">Adress</label>
+      <textarea name="adress" id="adress"></textarea>
+    </p>
+    <fieldset>
+      <legend>Pays</legend>
+      <input type="radio" name="Pays" value="Pays" id="Bénin"/>
+      <label for="Bénin">Bénin</label>
+      <input type="radio" name="Pays" value="Pays" id="Côte d'Ivoire"/>
+      <label for="Côte d'Ivoire">Côte d'Ivoire</label>
+      <input type="radio" name="Pays" value="Pays" id="Belgique"/>
+      <label for="Belgique">Belgique</label>
+      
+    </fieldset>
+    <legend>Les boutons</legend>
+    <input type="submit" value="envoyer"/>
+    <input type="reset"  value="effacer"/>
+    <input type="button" value="quitter"/>
+  </form>
+</body>
+</html>
